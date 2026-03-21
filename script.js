@@ -244,3 +244,73 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+// ─── Chatbot Modal ───
+window.openChatbotModal = function () {
+  const modal = document.getElementById('chatbotModal');
+  if (modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+};
+
+window.closeChatbotModal = function () {
+  const modal = document.getElementById('chatbotModal');
+  if (modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+};
+
+window.sendModalMessage = function () {
+  const input = document.getElementById('modalChatInput');
+  const body = document.getElementById('modalChatBody');
+  if (!input || !body || !input.value.trim()) return;
+
+  const msg = input.value.trim();
+  input.value = '';
+
+  // Add user message
+  const userDiv = document.createElement('div');
+  userDiv.className = 'chat-msg user-msg';
+  userDiv.innerHTML = `<p>${msg}</p>`;
+  body.appendChild(userDiv);
+  body.scrollTop = body.scrollHeight;
+
+  // Simulate typing
+  const typingDiv = document.createElement('div');
+  typingDiv.className = 'chat-msg ai-msg typing';
+  typingDiv.innerHTML = `<span class="dot"></span><span class="dot"></span><span class="dot"></span>`;
+  body.appendChild(typingDiv);
+  body.scrollTop = body.scrollHeight;
+
+  // Add AI response
+  setTimeout(() => {
+    typingDiv.remove();
+    const aiDiv = document.createElement('div');
+    aiDiv.className = 'chat-msg ai-msg';
+    aiDiv.innerHTML = `<p>Thanks for your message! This is a demo environment. In production, I would connect to a custom knowledge base to answer your question about "${msg}".</p>`;
+    body.appendChild(aiDiv);
+    body.scrollTop = body.scrollHeight;
+  }, 1500);
+};
+
+// Allow enter key to send message
+document.addEventListener('DOMContentLoaded', () => {
+  const chatInput = document.getElementById('modalChatInput');
+  if (chatInput) {
+    chatInput.addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') {
+        sendModalMessage();
+      }
+    });
+  }
+});
+
+// Close modal on outside click
+document.addEventListener('click', (e) => {
+  const modal = document.getElementById('chatbotModal');
+  if (modal && e.target === modal) {
+    closeChatbotModal();
+  }
+});

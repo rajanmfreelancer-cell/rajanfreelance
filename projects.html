@@ -52,6 +52,58 @@
                 <div class="gold-divider"></div>
             </div>
 
+            <!-- Project 0 — Full Width (New) -->
+            <div class="project-showcase reveal">
+                <div class="project-showcase-image" style="overflow: hidden;">
+                    <img src="assets/saas_dashboard_preview.png" alt="AI SaaS Analytics Dashboard Preview"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit; display: block; transition: transform 0.6s ease, box-shadow 0.6s ease; box-shadow: inset 0 0 20px rgba(0,0,0,0.5);"
+                        onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.8)'"
+                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='inset 0 0 20px rgba(0,0,0,0.5)'" />
+                </div>
+                <div class="project-showcase-info">
+                    <span class="project-category">SaaS / Analytics</span>
+                    <h3 class="project-showcase-title">AI SaaS Analytics Dashboard</h3>
+                    <p class="project-showcase-desc">A modern AI-powered SaaS dashboard that provides real-time
+                        analytics, automated reporting, and intelligent insights. The platform allows users to visualize
+                        data, track performance metrics, and make data-driven decisions with ease.</p>
+                    <div class="project-features" style="margin: 1.5rem 0;">
+                        <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem;">
+                            <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><span
+                                    style="color: var(--gold); font-size: 1.2rem; line-height: 1;">✦</span>
+                                <span>Real-time data visualization dashboards</span>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><span
+                                    style="color: var(--gold); font-size: 1.2rem; line-height: 1;">✦</span>
+                                <span>AI-powered insights and analytics</span>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><span
+                                    style="color: var(--gold); font-size: 1.2rem; line-height: 1;">✦</span>
+                                <span>Interactive charts and reports</span>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><span
+                                    style="color: var(--gold); font-size: 1.2rem; line-height: 1;">✦</span> <span>Secure
+                                    authentication system</span></li>
+                            <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><span
+                                    style="color: var(--gold); font-size: 1.2rem; line-height: 1;">✦</span>
+                                <span>Payment integration (Stripe)</span>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><span
+                                    style="color: var(--gold); font-size: 1.2rem; line-height: 1;">✦</span>
+                                <span>Scalable SaaS architecture</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span>Next.js</span><span>React</span><span>OpenAI
+                            API</span><span>PostgreSQL</span><span>Stripe</span>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                        <a href="https://sas-demo-el5e808ti-rajanmfreelancer-cells-projects.vercel.app/" target="_blank"
+                            rel="noopener noreferrer" class="btn btn--solid btn--small">Live Demo →</a>
+                    </div>
+                </div>
+            </div>
+
             <!-- Project 1 — Full Width -->
             <div class="project-showcase reveal">
                 <div class="project-showcase-image" style="background: linear-gradient(135deg, #1a1a2e, #16213e);">
@@ -81,20 +133,40 @@
 
             <!-- Project 2 — Full Width -->
             <div class="project-showcase project-showcase--reverse reveal">
-                <div class="project-showcase-image" style="background: linear-gradient(135deg, #0f2027, #203a43);">
-                    <svg class="project-icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="1">
-                        <path
-                            d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
-                    </svg>
+                <div class="project-showcase-image chatbot-preview-wrapper"
+                    style="background: linear-gradient(135deg, #0a0a0a, #1a1a1a); padding: 1.5rem; position: relative; overflow: hidden;">
+                    <div class="chatbot-ui-mockup">
+                        <div class="chat-header">
+                            <span class="chat-title">AI Assistant</span>
+                            <span class="chat-status"></span>
+                        </div>
+                        <div class="chat-body">
+                            <div class="chat-msg user-msg">
+                                <p>Can you help my business?</p>
+                            </div>
+                            <div class="chat-msg ai-msg">
+                                <p>Yes! I can automate support, capture leads, and respond instantly to customers.</p>
+                            </div>
+                            <div class="chat-msg ai-msg typing">
+                                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="chat-footer">
+                            <input type="text" placeholder="Ask about your business..." disabled />
+                            <div class="chat-send-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="project-showcase-info">
                     <span class="project-category">Conversational AI</span>
                     <h3 class="project-showcase-title">AI Chatbot Platform</h3>
-                    <p class="project-showcase-desc">An enterprise-grade conversational AI assistant with natural
-                        language understanding, context-aware responses, and multi-turn conversation memory. Features
-                        custom knowledge base training, sentiment analysis, lead qualification, and seamless CRM
-                        integration for automated customer support.</p>
+                    <p class="project-showcase-desc">A luxury AI-powered chatbot platform designed to automate customer
+                        conversations with human-like intelligence. Built for businesses to reduce support costs,
+                        qualify leads, and deliver instant responses 24/7 using advanced conversational AI.</p>
                     <div class="project-results">
                         <div class="project-result"><strong>80%</strong> Query Resolution</div>
                         <div class="project-result"><strong>24/7</strong> Availability</div>
@@ -102,7 +174,11 @@
                     </div>
                     <div class="project-tech"><span>Next.js</span><span>TypeScript</span><span>GPT-4
                             API</span><span>Pinecone</span><span>Vercel</span></div>
-                    <a href="#" class="btn btn--solid btn--small" style="margin-top:1rem;">Live Demo →</a>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                        <button onclick="openChatbotModal()" class="btn btn--solid btn--small"
+                            style="margin-top:0;">Live Demo &rarr;</button>
+                        <a href="#" class="btn btn--outline btn--small" style="margin-top:0;">View Case Study</a>
+                    </div>
                 </div>
             </div>
 
@@ -347,6 +423,38 @@
         </div>
     </footer>
     <script src="script.js"></script>
+
+    <!-- Chatbot Modal -->
+    <div id="chatbotModal" class="modal-overlay">
+        <div class="modal-content chatbot-modal">
+            <button class="modal-close" onclick="closeChatbotModal()">&times;</button>
+            <div class="modal-header">
+                <h3>Live Chatbot Demo</h3>
+                <p>Previewing the Conversational AI Interface</p>
+            </div>
+            <div class="modal-body">
+                <div class="chatbot-ui-mockup modal-preview-chat">
+                    <div class="chat-header">
+                        <span class="chat-title">AI Assistant</span>
+                        <span class="chat-status">Online</span>
+                    </div>
+                    <div class="chat-body" id="modalChatBody">
+                        <div class="chat-msg ai-msg">
+                            <p>Hello! I'm an enterprise AI demo. How can I assist you today?</p>
+                        </div>
+                    </div>
+                    <div class="chat-footer">
+                        <input type="text" id="modalChatInput" placeholder="Type a message..." />
+                        <button class="chat-send-btn outline-none" onclick="sendModalMessage()">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
